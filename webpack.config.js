@@ -1,6 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 module.exports = {
     entry: './src/order.js',
     output: {
@@ -10,6 +10,9 @@ module.exports = {
     },
     devtool: "source-map",
     mode: "development",
+    performance : {
+        hints : false
+    },
     module: {
         rules: [
             {
@@ -84,6 +87,11 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'order.css',
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
     ],
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+<div class="wrp">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Логотип</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="sitting.html">Настройки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Ссылка на запись</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0">
+                <a href="#" class="btn btn-outline-dark">Выйти</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="form">
+            <h1>Услуги</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Цена (тг)</th>
+                    <th scope="col">Сеанс (часов)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><input type="text" class="form-control" id="name" placeholder="Например: Маникюр"></td>
+                    <td><input type="text" class="form-control" id="price" placeholder="Например: 3500"></td>
+                    <td><input type="text" class="form-control" id="long" placeholder="Например: 1.3"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="form-group text-right">
+                <button type="submit" class="btn btn-secondary mr-0 ml-auto">Добавить</button>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+    </div>
+</div>
+<script src="order.js"></script>
+</body>
+</html>
